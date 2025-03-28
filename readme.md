@@ -1,92 +1,81 @@
-# Angular Interview Questions (SDE-2)
+# Angular Senior Developer Interview Questions
 
-This repository contains **50 Angular interview questions** categorized into **Easy, Medium, and Hard** levels. These questions cover important concepts for **SDE-2 and above** roles.
-
----
-
-## 📌 Easy-Level Angular Questions (15 Questions)
-
-### 1. Angular Basics & Fundamentals
+## 1. Core Angular Concepts
 1. What is Angular, and how is it different from AngularJS?
-2. What are the key features of Angular?
-3. What is TypeScript, and why is it used in Angular?
-4. What are components in Angular? How do you create one?
-5. What are directives in Angular? What is the difference between structural and attribute directives?
+2. Explain the component-based architecture of Angular.
+3. What are Angular modules (`@NgModule`), and why are they important?
+4. What are Angular templates, and how do they work?
+5. What is the role of decorators like `@Component`, `@NgModule`, and `@Injectable`?
+6. What is TypeScript, and why does Angular use it?
+7. Explain the difference between **declarative and imperative programming** in Angular.
+8. How does **Angular’s bootstrapping process** work?
+9. What is **Change Detection**, and how does it work in Angular?
+10. What is **Zone.js**, and why is it used in Angular?
 
-### 2. Data Binding & Services
-6. What are the different types of data binding in Angular?
-7. What is interpolation, and how is it different from property binding?
-8. What are services in Angular, and how do you create and use them?
-9. What is Dependency Injection in Angular?
-10. How do you pass data from a parent component to a child component and vice versa?
+## 2. Lifecycle Hooks & View Management
+11. What are **Angular lifecycle hooks**? Explain their execution order.
+12. What is the difference between **ngOnInit and ngOnChanges**?
+13. What is the use of **ngAfterViewInit and ngAfterContentInit**?
+14. When would you use **ngDoCheck** instead of **ngOnChanges**?
+15. How do you clean up subscriptions in **ngOnDestroy**?
+16. What is the difference between **ViewChild, ViewChildren, ContentChild, and ContentChildren**?
+17. How can you manually trigger change detection in Angular?
+18. What are **detached change detectors**, and how do they improve performance?
 
-### 3. Angular Forms & Routing
-11. What is the difference between template-driven and reactive forms?
-12. How do you handle form validation in Angular?
-13. What are Angular pipes, and how do you create a custom pipe?
-14. What is Routing in Angular, and how do you define a basic route?
-15. How do you navigate between routes programmatically in Angular?
+## 3. Data Binding & Directives
+19. What are the four types of data binding in Angular?
+20. What is **two-way data binding**, and how is it implemented in Angular?
+21. Explain the difference between **structural directives** (`*ngIf`, `*ngFor`) and **attribute directives** (`[ngClass]`, `[ngStyle]`).
+22. How does **trackBy** improve performance in `*ngFor`?
+23. What is a **custom directive** in Angular, and how do you create one?
+24. What are **pipes** in Angular, and how do they work?
 
----
+## 4. Dependency Injection & Services
+25. What is **dependency injection (DI)** in Angular?
+26. What are **service providers**, and how do they work?
+27. What is the difference between **providedIn: 'root'** and **module-level providers**?
+28. What is an **HTTP Interceptor**, and how do you implement one?
+29. How do you use **RxJS Observables** in an Angular service?
 
-## ⚡ Medium-Level Angular Questions (20 Questions)
+## 5. Performance Optimization
+30. What is the **OnPush change detection strategy**, and when should you use it?
+31. How does **lazy loading** work in Angular?
+32. What are **pure and impure pipes**, and how do they affect performance?
+33. How does **Ahead-of-Time (AOT) compilation** improve performance?
+34. How would you optimize an Angular application for faster rendering?
 
-### 1. Angular Architecture & Advanced Concepts
-16. What is the difference between ViewChild and ContentChild?
-17. How does the Angular lifecycle work? Explain different lifecycle hooks.
-18. What are feature modules in Angular, and why are they useful?
-19. What is the purpose of `forRoot()` and `forChild()` in Angular modules?
-20. How does lazy loading work in Angular?
+## 6. State Management & RxJS
+35. What is **NgRx**, and how does it help with state management?
+36. What is the difference between **BehaviorSubject, Subject, and ReplaySubject** in RxJS?
+37. Explain the purpose of `switchMap`, `mergeMap`, and `concatMap` in RxJS.
+38. How do you handle **error handling in RxJS Observables**?
+39. What is the **async pipe**, and how does it work?
+40. How do you cancel pending HTTP requests in Angular?
 
-### 2. Change Detection & Performance Optimization
-21. What is Change Detection in Angular, and how does it work?
-22. What is the difference between Default and OnPush Change Detection strategies?
-23. How does `TrackBy` improve the performance of `ngFor` loops?
-24. What is `zone.js`, and how does it impact Angular applications?
-25. How do you detach and reattach Change Detection in Angular?
+## 7. Routing & Navigation
+41. What is **Angular Router**, and how does it work?
+42. How do you implement **lazy-loaded routes** in Angular?
+43. What are **Route Guards (CanActivate, CanDeactivate, Resolve, etc.)**, and how do they work?
+44. How can you pass **route parameters** between components?
+45. How do you handle **404 and wildcard routes** in Angular?
 
-### 3. RxJS & State Management
-26. What is RxJS, and how is it used in Angular?
-27. What is the difference between `BehaviorSubject`, `ReplaySubject`, and `Subject`?
-28. What are the differences between `mergeMap`, `switchMap`, and `concatMap`?
-29. How can you prevent memory leaks in Angular applications using RxJS?
-30. What is NgRx, and how does it help in state management?
-
-### 4. Routing & Forms Advanced Topics
-31. What are Route Guards in Angular, and how do `CanActivate` and `CanDeactivate` work?
-32. What is a Resolver in Angular, and how is it used in routing?
-33. How do you handle nested and child routes in Angular?
-34. What is the purpose of the `async` pipe in Angular?
-35. How do you create a dynamic form using FormArray in Angular?
-
-### 5. Miscellaneous
-36. What are standalone components in Angular?
-37. How does Angular handle error handling globally?
-38. What is an Injection Token, and when would you use it?
-39. How do you debug Angular applications efficiently?
-40. What are the different types of compilers in Angular (JIT vs AOT), and which one should you use in production?
-
----
-
-## 🔥 Hard-Level Angular Questions (15 Questions)
-
-### 1. Angular Advanced Optimization & Performance
-41. How do you optimize an Angular application for faster performance?
-42. How do you optimize Angular applications for a production build?
-43. How does `ɵɵdefineComponent` work internally in Angular?
-44. What are detached Change Detectors, and how can they be useful?
-45. What are the differences between `ApplicationRef.tick()`, `markForCheck()`, and `detectChanges()`?
-
-### 2. RxJS & Advanced State Management
-46. How does `exhaustMap` work, and when should you use it?
-47. How can you implement a custom RxJS operator?
-48. What is Store Freezing in NgRx, and why is it important?
-
-### 3. Server-Side Rendering, Authentication & Security
-49. How does Angular Universal (SSR) work, and what are its benefits?
-50. How do you implement authentication and authorization in Angular with JWT and route guards?
+## 8. Security & Best Practices
+46. How does Angular handle **Cross-Site Scripting (XSS) protection**?
+47. How do you implement **JWT-based authentication** in Angular?
+48. What is **Content Security Policy (CSP)**, and how does it apply to Angular?
+49. What are **trusted types**, and how do they improve security in Angular?
+50. How do you protect Angular applications against **cross-site request forgery (CSRF) attacks**?
 
 ---
 
-
-This **README.md** serves as a **study guide** for Angular interviews. 🚀 Feel free to contribute or add more questions!
+## 10 Machine Coding Round Questions
+1. **Create a Debounced Search Component** – Implement an input field that fetches data after 300ms delay using `debounceTime`.
+2. **Build a Dynamic Form Generator** – Create a form that renders based on a given JSON configuration.
+3. **Implement a Custom Directive** – Write a directive that changes background color on hover.
+4. **Develop a Todo App with NgRx** – Create a CRUD-based Todo list using state management.
+5. **Create an HTTP Interceptor for JWT Authentication** – Modify HTTP requests to include authentication tokens.
+6. **Optimize a Large List Rendering** – Implement a virtual scroll feature for rendering large datasets.
+7. **Build a Modal Component Using Content Projection** – Create a reusable modal dialog with dynamic content.
+8. **Implement a Custom Pipe** – Write a pipe to format text as title case (e.g., `hello world` → `Hello World`).
+9. **Create a Multi-Step Form with State Management** – Design a form that maintains state across steps.
+10. **Develop a Role-Based Access Control (RBAC) System** – Implement role-based authorization using Angular guards.
