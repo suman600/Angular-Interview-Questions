@@ -2,7 +2,7 @@
 
 ## 1. Core Angular Concepts
 1. What is Angular, and how is it different from AngularJS?
-2. Explain the component-based architecture of Angular.
+2. Explain the Angular architecture.
 3. What are Angular modules (`@NgModule`), and why are they important?
 4. What are Angular templates, and how do they work?
 5. What is the role of decorators like `@Component`, `@NgModule`, and `@Injectable`?
