@@ -30,44 +30,55 @@
 23. What is a **custom directive** in Angular, and how do you create one?
 24. What are **pipes** in Angular, and how do they work?
 
+##  Angular Forms (Template-driven & Reactive)
+25. What are the key differences between Template-driven and Reactive forms in Angular?
+26. How do you create a Reactive form using FormBuilder and FormGroup?
+27. How can you apply synchronous and asynchronous validators in Reactive forms?
+28. How do you dynamically add or remove form controls or form groups?
+29. What are the steps to bind and validate a Template-driven form in Angular?
+30. How do you track form state (touched, dirty, valid, etc.) in both types of forms?
+31. How can you trigger validation messages conditionally?
+32. What are some common issues and best practices when working with forms in Angular?
+33. How do you submit a form and get the form values in both approaches?
+34. How do you write unit tests for Reactive forms in Angular?
+
 ## 4. Dependency Injection & Services
-25. What is **dependency injection (DI)** in Angular?
-26. What are **service providers**, and how do they work?
-27. What is the difference between **providedIn: 'root'** and **module-level providers**?
-28. What is an **HTTP Interceptor**, and how do you implement one?
-29. How do you use **RxJS Observables** in an Angular service?
+35. What is **dependency injection (DI)** in Angular?
+36. What are **service providers**, and how do they work?
+37. What is the difference between **providedIn: 'root'** and **module-level providers**?
+38. What is an **HTTP Interceptor**, and how do you implement one?
+39. How do you use **RxJS Observables** in an Angular service?
 
 ## 5. Performance Optimization
-30. What is the **OnPush change detection strategy**, and when should you use it?
-31. How does **lazy loading** work in Angular?
-32. What are **pure and impure pipes**, and how do they affect performance?
-33. How does **Ahead-of-Time (AOT) compilation** improve performance?
-34. How would you optimize an Angular application for faster rendering?
+40. What is the **OnPush change detection strategy**, and when should you use it?
+41. How does **lazy loading** work in Angular?
+42. What are **pure and impure pipes**, and how do they affect performance?
+43. How does **Ahead-of-Time (AOT) compilation** improve performance?
+44. How would you optimize an Angular application for faster rendering?
 
 ## 6. State Management & RxJS
-35. What is **NgRx**, and how does it help with state management?
-36. What is the difference between **BehaviorSubject, Subject, and ReplaySubject** in RxJS?
-37. Explain the purpose of `switchMap`, `mergeMap`, and `concatMap` in RxJS.
-38. How do you handle **error handling in RxJS Observables**?
-39. What is the **async pipe**, and how does it work?
-40. How do you cancel pending HTTP requests in Angular?
+45. What is **NgRx**, and how does it help with state management?
+46. What is the difference between **BehaviorSubject, Subject, and ReplaySubject** in RxJS?
+47. Explain the purpose of `switchMap`, `mergeMap`, and `concatMap` in RxJS.
+48. How do you handle **error handling in RxJS Observables**?
+49. What is the **async pipe**, and how does it work?
+50. How do you cancel pending HTTP requests in Angular?
 
 ## 7. Routing & Navigation
-41. What is **Angular Router**, and how does it work?
-42. How do you implement **lazy-loaded routes** in Angular?
-43. What are **Route Guards (CanActivate, CanDeactivate, Resolve, etc.)**, and how do they work?
-44. How can you pass **route parameters** between components?
-45. How do you handle **404 and wildcard routes** in Angular?
+51. What is **Angular Router**, and how does it work?
+52. How do you implement **lazy-loaded routes** in Angular?
+53. What are **Route Guards (CanActivate, CanDeactivate, Resolve, etc.)**, and how do they work?
+54. How can you pass **route parameters** between components?
+55. How do you handle **404 and wildcard routes** in Angular?
 
 ## 8. Security & Best Practices
-46. How does Angular handle **Cross-Site Scripting (XSS) protection**?
-47. How do you implement **JWT-based authentication** in Angular?
-48. What is **Content Security Policy (CSP)**, and how does it apply to Angular?
-49. What are **trusted types**, and how do they improve security in Angular?
-50. How do you protect Angular applications against **cross-site request forgery (CSRF) attacks**?
+56. How does Angular handle **Cross-Site Scripting (XSS) protection**?
+57. How do you implement **JWT-based authentication** in Angular?
+58. What is **Content Security Policy (CSP)**, and how does it apply to Angular?
+59. What are **trusted types**, and how do they improve security in Angular?
+60. How do you protect Angular applications against **cross-site request forgery (CSRF) attacks**?
 
 ---
-
 ## 10 Machine Coding Round Questions
 1. **Create a Debounced Search Component** – Implement an input field that fetches data after 300ms delay using `debounceTime`.
 2. **Build a Dynamic Form Generator** – Create a form that renders based on a given JSON configuration.
